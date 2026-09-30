@@ -4,8 +4,9 @@
   "description": "DEVHUB messaging application backend",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "start": "node scripts/init-db.js && node server.js",
+    "dev": "node server.js",
+    "init-db": "node scripts/init-db.js"
   },
   "engines": {
     "node": ">=18"
